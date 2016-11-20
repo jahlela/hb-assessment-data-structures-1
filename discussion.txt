@@ -1,0 +1,43 @@
+Runtime
+
+    1. The number of animals in the box will determine the workload.
+    2. O(1), O(log n), O(n), O(n log n), O(n2), O(2^n) 
+
+
+Stacks and Queues
+
+    In the following cases, would a stack or queue be a more appropriate data structure?
+    1. Stack v. Queue
+        a. Pallets: Stack
+        b. Bottles: Queue
+        c. Expression: Stack
+    2. A queue would be more appropriate for describing the movement of a line of 
+       cars at a toll bridge, or the numbering system at a deli counter.
+    3. A stack would be better for the call stack on a recursive function, or a stack 
+       of bowls or plates.
+
+
+Linked Lists
+
+    1. Linked list example
+        a. Nodes: ["Apple" | next ], ["Berry" | next ],  ["Cherry" | next ]
+        b. Data: "Apple", "Berry", "Cherry"
+        c. Head: ["Apple" | next ]
+        d. Tail: ["Cherry" | next ]
+
+    2. A singly-linked list has a next attribute, which is a pointer to the next
+       node in the list. A doubly-linked list has the next pointer too, but also
+       has a pointer to the previous node.
+    3. In order to append something to the end of the list, you need to know where 
+       the end is. Without knowing this, the computer would have to look at every 
+       element in the list, starting at the head, until it found an element whose
+       next pointer was None (the last element). This is O(N) time, versus O(1)
+       time if we know precisely where the tail is in the first place.
+
+Trees
+
+    1. Food, Italian, Indian, Mexican, lasagna, pizza, tikka masala, saag, BURRITO
+    2. Food, Italian, lasagna, pizza, thin-curst, CHICAGO-STYLE
+    3. Binary search trees have nodes which have at most two children, and the 
+       left child is always smaller than its parent, while the right child is 
+       always larger. This is true for every node in the BST.
